@@ -11,7 +11,7 @@ def getDateFromYearAndDayofyear(year, dayofyear):
 	#print(dt)
 	return dt
 
-
+# YQ2.YQ002.2019.075.E.sac =>YQ2.E.20190316.sac
 for root, dirs, files in os.walk("."):
 	for file in files:
 		matchObj = re.match(r'^([^.]+).([^.]+).([0-9]+).([0-9]+).([EeNnZz]+).(sac)$', file)
